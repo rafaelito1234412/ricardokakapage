@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina de kaka</title>
+    <title>Página de Kaká</title>
 
     <style>
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ff0000;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff0000, #8b0000);
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            color: #333;
         }
 
-        h1 {
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
             text-align: center;
-            color: #ffffff;
+            padding: 30px 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        .contenedor {
-            border: 3px solid #007bff; /* Borde azul */
-            border-radius: 10px;
-            background-color: rgb(255, 255, 255);
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #c00;
+            border-bottom: 2px solid #c00;
+            padding-bottom: 5px;
         }
 
         img {
             display: block;
             margin: 20px auto;
-            border: 2px solid #555;
-            border-radius: 10px;
+            border-radius: 15px;
             width: 300px;
+            border: 3px solid #c00;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
 
         audio {
@@ -44,40 +62,93 @@
 
         p {
             text-align: justify;
-            color: #444;
-            font-size: 18px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: white;
+            background-color: #c00;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(0,0,0,0.85);
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
 
-    <h1><em>⚽ Ricardo Izecson dos Santos Leite </em></h1>
+    <header>
+        <h1><em>⚽ Ricardo Izecson dos Santos Leite (Kaká)</em></h1>
+    </header>
 
-    <div class="contenedor">
-        <h2>📸 Ricardo KAKÁ</h2>
-        <img src="ricardo.jpg" alt="Ejemplo de imagen">
+    <main>
+        <!-- SECCIÓN DE PRESENTACIÓN -->
+        <section>
+            <h2>📸 Ricardo KAKÁ</h2>
+            <img src="ricardo.jpg" alt="Foto de Ricardo Kaká">
+        </section>
 
-        <h2>🎵 Música icónica:</h2>
-        <audio controls>
-            <source src="Garota De Ipanema - Kaká Prime.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
+        <!-- SECCIÓN DE MÚSICA -->
+        <section>
+            <h2>🎵 Música icónica:</h2>
+            <audio controls>
+                <source src="Garota De Ipanema - Kaká Prime.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
 
-        <h2><strong>¿Quién es Ricardo KAKÁ?</strong></h2>
-        <p>
-Ricardo Kaká fue un exfutbolista brasileño profesional conocido por su habilidad como mediocampista ofensivo, 
-velocidad y visión de juego, quien triunfó en clubes como el AC Milan y fue una figura clave en la selección brasileña. 
-Ganó el Balón de Oro en 2007, siendo uno de los jugadores más destacados de su generación. 
-        </p>
-           <h2><strong>Relevancia en el AC MILAN</strong></h2>
+        <!-- SECCIÓN DE BIOGRAFÍA -->
+        <section>
+            <article>
+                <h2>👤 ¿Quién es Ricardo KAKÁ?</h2>
+                <p>
+                    Ricardo Kaká fue un exfutbolista brasileño profesional conocido por su habilidad como mediocampista ofensivo, 
+                    velocidad y visión de juego, quien triunfó en clubes como el AC Milan y fue una figura clave en la selección brasileña. 
+                    Ganó el Balón de Oro en 2007, siendo uno de los jugadores más destacados de su generación.
+                </p>
+            </article>
 
-        <p>
-            La relevancia de Kaká en el AC Milan fue inmensa;
-             es considerado una leyenda del club, siendo clave en la conquista de la Champions League 2007,
-             su última Copa de Europa. Su éxito en el Milán fue tal que ganó el Balón de Oro y el FIFA World Player en ese mismo año,
-            consolidándose como uno de los mejores jugadores del mundo.
-        </p>
-    </div>
+            <article>
+                <h2>🏆 Relevancia en el AC MILAN</h2>
+                <p>
+                    La relevancia de Kaká en el AC Milan fue inmensa; es considerado una leyenda del club, siendo clave en la conquista de la 
+                    Champions League 2007. Su éxito en el Milán fue tal que ganó el Balón de Oro y el FIFA World Player ese mismo año, 
+                    consolidándose como uno de los mejores jugadores del mundo.
+                </p>
+            </article>
+        </section>
+
+        <!-- SECCIÓN DE ENLACE -->
+        <section style="text-align: center;">
+            <h2>⭐ ¿Deseas saber sobre Cristiano Ronaldo?</h2>
+            <p><em>Si es así, haz clic aquí:</em></p>
+            <a href="https://cristianoronaldopage1.netlify.app/" target="_blank">
+                Visita la página de Cristiano Ronaldo
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Página creada por[Rafael] </p>
+    </footer>
 
 </body>
 </html>
